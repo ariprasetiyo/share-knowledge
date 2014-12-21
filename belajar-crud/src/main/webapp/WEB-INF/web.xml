@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true">
+
+  <display-name>Belajar JSP</display-name>
+  <description>
+     TEST
+  </description>
+    
+    <servlet>
+        <servlet-name>DaftarMhs</servlet-name>
+        <servlet-class>com.arprast.servlet.servletDaftarMahasiswa</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DaftarMhs</servlet-name>
+        <url-pattern>/daftarMhs.ari</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>InputMhs</servlet-name>
+        <servlet-class>com.arprast.servlet.servetTambahEditMhs</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InputMhs</servlet-name>
+        <url-pattern>/formInputData</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>editMhs</servlet-name>
+        <servlet-class>com.arprast.servlet.servetTambahEditMhs</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editMhs</servlet-name>
+        <url-pattern>/edit-mhs</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
